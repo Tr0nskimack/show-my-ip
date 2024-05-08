@@ -61,10 +61,15 @@ const App = () => {
    
 
     return (
+      <div >
+
       <DataContext.Provider value = {{dataApi, publicIpAddress, nameprovider, regionName, countryprovider,city,region,timezone,latitud,longitud, as}}>
-        
+        <Header />
         <Outlet />
+
+        
       </DataContext.Provider>
+      </div>
     );
   };
 
@@ -84,7 +89,7 @@ const App = () => {
   
 
   return (
-    <div className="h-screen bg-[#555557]">
+    <div className="min-h-screen bg-[#555557] ">
       <RouterProvider router ={router} />
     </div>
   );

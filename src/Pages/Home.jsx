@@ -97,7 +97,7 @@ export const Home = () => {
         <div className="my-3">
           <div className="flex items-center gap-2">
             <h1 className="text-3xl text-textoblanco">{publicIpAddress ? publicIpAddress : (<h1>No data...</h1>)}</h1>
-            <div className="bg-green-500 rounded-full px-1 py-1 w-[2px] shadow-2xl shadow-green-400 hover:shadow-green-600"></div>
+            <div className="bg-green-500 rounded-full px-1 py-1 w-[2px] shadow-md shadow-green-500"></div>
           </div>
           {/* array */}
           <div className="grid grid-cols-2 justify-items-center align-items-center">

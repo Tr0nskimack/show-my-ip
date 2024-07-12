@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Header } from "./Components/Header";
 import { Home } from "./Pages/Home";
+import { Footer } from "./Components/Footer";
 
 
 export const DataContext = createContext();
@@ -66,6 +67,7 @@ const App = () => {
       <DataContext.Provider value = {{dataApi, publicIpAddress, nameprovider, regionName, countryprovider,city,region,timezone,latitud,longitud, as}}>
         <Header />
         <Outlet />
+        <Footer/>
 
         
       </DataContext.Provider>

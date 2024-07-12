@@ -78,7 +78,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <Helmet>
-        <title>showme my ip - Informacion de mi IP publica</title>
+        <title>ipinfo.lat - Informacion de mi IP publica</title>
         <meta name="description" content="Showme my IP - Informacion de mi IP publica" />
         <meta name="rating" content="General" />
         <link rel="canonical" href="https://app-letters-convert.vercel.app/" />

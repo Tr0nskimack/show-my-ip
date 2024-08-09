@@ -21,7 +21,7 @@ export const Home = () => {
       valor: city,
     },
     {
-      nombre: "region",
+      nombre: "org",
       valor: region,
     },
     {
@@ -33,12 +33,12 @@ export const Home = () => {
       valor: as,
     },
     {
-      nombre: "Longitud",
-      valor: longitud,
-    },
-    {
       nombre: "Latitud",
       valor: latitud,
+    },
+    {
+      nombre: "Longitud",
+      valor: longitud,
     },
   ];
 
@@ -81,8 +81,8 @@ export const Home = () => {
         <title>ipinfo.lat - Informacion de mi IP publica</title>
         <meta name="description" content="Showme my IP - Informacion de mi IP publica" />
         <meta name="rating" content="General" />
-        <link rel="canonical" href="https://app-letters-convert.vercel.app/" />
-        <meta name="keywords" content="Show me my Ip" />
+        <link rel="canonical" href="https://ipinfo.lat/" />
+        <meta name="keywords" content="ipinfo" />
       </Helmet>
       <div className="w-[620px] h-[570px] bg-cardgrande rounded-lg p-4 shadow-lg mt-[60px]">
         <header className="flex justify-between items-center">

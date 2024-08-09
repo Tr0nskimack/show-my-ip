@@ -31,20 +31,20 @@ const App = () => {
 
     const fetchPublicIP = async () => {
       try {
-        const response = await axios.get("http://ip-api.com/json/?fields=61439");
-        /* console.log(response.data); */
-        setNameprovider(response.data.isp)
-        setPublicIpAddress(response.data.query)
-        setcountryProvider(response.data.country)
-        setCity(response.data.city)
-        setRegion(response.data.region)
-        setTimezone(response.data.timezone)
+        const response = await axios.get("http://ip.guide");
+        console.log(response.data);
+        setNameprovider(response.data.network.autonomous_system.name)
+        setPublicIpAddress(response.data.ip)
+        setcountryProvider(response.data.location.country)
+        setCity(response.data.location.city)
+        setRegion(response.data.network.autonomous_system.rir)
+        setTimezone(response.data.location.timezone)
         setRegionName(response.data.regionName)
-        setAs(response.data.as)
+        setAs(response.data.network.autonomous_system.asn)
         
 
-        setLatitud(response.data.lat)
-        setLongitud(response.data.lon)
+        setLatitud(response.data.location.latitude)
+        setLongitud(response.data.location.longitude)
         /* setDataApi(response.data); */
       } catch (error) {
         console.error("Error fetching public IP:", error);
